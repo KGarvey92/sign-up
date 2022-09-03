@@ -35,12 +35,9 @@ body {
     flex: 1.2;
 }
 
-.container-right {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+.title-icon {
+    height: 4rem;
+    width: auto;
 }
 
 .banner {
@@ -56,7 +53,27 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.title-icon {
-    height: 4rem;
-    width: auto;
+.container-right {
+    border: 1px solid red;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-container {
+    border: 1px solid red;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    flex: 1.5;
+    justify-content: space-around;
 }
