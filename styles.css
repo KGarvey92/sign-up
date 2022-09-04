@@ -75,7 +75,7 @@ body {
     text-align: center;
     font-weight: 600;
     font-size: 1.3rem;
-    padding: 0.2rem;
+    padding: 1.5rem;
 }
 
 form {
@@ -93,6 +93,10 @@ form {
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
+    padding-bottom: 1rem;
+    justify-content: center;
+    box-shadow: 0rem 0.1rem 0.rem slategray;
+
 }
 
 .form-header {
@@ -122,12 +126,13 @@ input {
 }
 
 input:focus {
-    outline: none;
+    outline-color: #9D687F;
 }
 
 .buttons {
     flex: 1;
     width: 100%;
+    padding-bottom: 0.5rem;
     }
 
 .buttons * {
@@ -144,4 +149,24 @@ input:focus {
     font-size: 1rem;
     font-family: 'Roboto Slab', serif;
     font-weight: 600;
+    position: relative;
+    box-shadow: 0rem 0.1rem 0.2rem black;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    background-color: hsl(334, 21%, 41%);
+}
+
+.submit-btn:active, .buttons a:active {
+    top: 0.1rem;
+}
+.buttons a {
+    text-decoration: none;
+    color: #9D687F;
+    margin: 0;
+}
+
+.buttons a:hover {
+    color: hsl(334, 21%, 31%);
 }
