@@ -130,9 +130,10 @@ input:focus {
     box-shadow: 0.1rem 0.1rem 0.2rem silver;
 }
 
-input:invalid {
+input:invalid, .password-error {
     border: 1px solid red;
 }
+
 
 input:placeholder-shown {
     border: 1px solid silver;

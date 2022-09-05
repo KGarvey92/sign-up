@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet"> 
+    <script src="script.js" defer></script>
     <title>Sign-up Form</title>
 </head>
 <body>
@@ -46,11 +47,11 @@
                 <div class="form-row">
                     <div class="input-field">
                         <label for="password"> *PASSWORD</label>
-                        <input type="password" id="password" name="password" required placeholder="********">
+                        <input type="password" id="password" name="password" required placeholder="Minimum 8 Characters" pattern=".{8,}">
                     </div>
                     <div class="input-field">
                         <label for="confirm-password"> *CONFIRM PASSWORD</label>
-                        <input type="password" id="password" name="password" required placeholder="********">
+                        <input type="password" id="confirm-password" disabled name="confirmPassword" oninvalid="this.setCustomValidity('Passwords do not match.')" required placeholder="Confirm Password">
                     </div>
                 </div>
             </div>
